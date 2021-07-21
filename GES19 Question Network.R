@@ -44,12 +44,12 @@ Network19 <- estimateNetwork(
 #extract the network graph as a pdf
 Labels <- variable.names(data19)
 
-pdf("Network_full_2019-2.pdf")
+pdf("Network_full_2019 (0.1-1).pdf")
 Qgraph19 <- qgraph(Network19$results$pairwise$wadj,
                  labels = Labels,
                  #groups = Group,
-                 layout = "spring", minimum = 0.05, maximum = 0.8,
-                 title = "GES 2019 / Full population / Min = 0.05 /Max = 0.8")
+                 layout = "spring", minimum = 0.1, maximum = 1,
+                 title = "GES 2019 / Full population / Min = 0.1 /Max = 1")
 dev.off()
 
 #+++++++++++++++++GES2018 data as conparison++++++++++++++++++++++++++++++++++++++++++++++++++
